@@ -39,11 +39,11 @@ int main(int ac, char **av)
     {
         int i = 0;
 
-        // Skip initial spaces/tabs
+        
         while (av[1][i] == ' ' || av[1][i] == '\t')
             i++;
 
-        // Print the first word
+  
         while (av[1][i] && av[1][i] != ' ' && av[1][i] != '\t')
         {
             write(1, &av[1][i], 1);
